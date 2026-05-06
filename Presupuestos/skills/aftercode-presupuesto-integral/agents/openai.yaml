@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aftercode Presupuesto Integral"
+  short_description: "Releva, estima y publica presupuestos."
+  default_prompt: "Usa $aftercode-presupuesto-integral para relevar el proyecto, definir funcionalidades, estimar horas y preparar el presupuesto final."
