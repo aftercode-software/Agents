@@ -1,0 +1,4 @@
+interface:
+  display_name: "Instagram Aftercode"
+  short_description: "Crea el paquete semanal de Instagram de Aftercode."
+  default_prompt: "Usa $instagram para crear la semana de contenido de Instagram de Aftercode y prepararla para Drive."
