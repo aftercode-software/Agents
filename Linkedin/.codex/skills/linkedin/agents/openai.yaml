@@ -1,4 +1,4 @@
 interface:
   display_name: "LinkedIn Aftercode"
-  short_description: "Posts humanos, breves y listos para publicar."
-  default_prompt: "Usa $linkedin para conversar sobre un tema, crear tres opciones de post y pulir la elegida conmigo."
+  short_description: "Posts humanos con imágenes y mockups aprobados."
+  default_prompt: "Usa $linkedin para crear tres opciones de post, pulir la elegida y preparar su imagen en un mockup de 1080 x 1350."

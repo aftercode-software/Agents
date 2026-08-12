@@ -8,11 +8,12 @@ Resolver la imagen solo despues de que el texto este aprobado.
 
 ## Flujo de seleccion
 
-- Si el usuario aporta imagenes, conservar y subir los archivos tal cual: no editar, recortar, comprimir, renombrar ni alterar metadatos salvo pedido expreso.
+- Si el usuario aporta imagenes, conservar los originales tal cual: no editar, recortar, comprimir, renombrar ni alterar metadatos. Crear los mockups como archivos derivados separados.
 - Si el usuario no tiene imagenes, generar tres imagenes reales y visualmente distintas. No limitarse a describir conceptos o prompts.
 - Mostrar las tres imagenes en la conversacion y esperar una eleccion o pedido de cambios.
 - No subir ninguna imagen a Drive hasta que el usuario haya aprobado la seleccion y confirmado la subida del paquete final.
 - Si el usuario descarta las tres, permitir nuevas propuestas o publicar solo texto.
+- Despues de aprobar la imagen principal, leer `galeria-mockups.md`, crear la composicion final y aprobarla por separado.
 
 ## Tipos de imagen
 
@@ -74,9 +75,4 @@ Debe incluir:
 - formato sugerido
 - notas de privacidad o cuidado
 
-Formato sugerido para LinkedIn:
-
-- 1200 x 1200 para imagen cuadrada
-- 1200 x 627 para imagen horizontal
-
-Elegir segun el contenido y explicar la recomendacion.
+Formato final obligatorio para LinkedIn: **1080 x 1350 px**.

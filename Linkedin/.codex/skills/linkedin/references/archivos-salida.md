@@ -60,6 +60,12 @@ Crear solo si aplica.
 ## Notas de privacidad
 ```
 
+Guardar tambien:
+
+- la imagen original o generada aprobada, sin mockup;
+- cada mockup final aprobado en 1080 x 1350;
+- el identificador de la plantilla usada y el foco de recorte.
+
 ## `FUENTES.md`
 
 Crear cuando haya investigacion actual.

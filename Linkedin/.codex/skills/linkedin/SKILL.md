@@ -1,6 +1,6 @@
 ---
 name: linkedin
-description: Crear y pulir publicaciones breves, humanas y atractivas para el perfil personal de LinkedIn de Matias Ongay, CEO de Aftercode. Usar cuando el usuario quiera conversar sobre una idea, generar tres versiones de un post, trabajar su redaccion, resolver imagenes propias o generadas y, solo tras aprobacion explicita, guardar el material final en Google Drive.
+description: Crear y pulir publicaciones breves, humanas y atractivas para el perfil personal de LinkedIn de Matias Ongay, CEO de Aftercode. Usar cuando el usuario quiera conversar sobre una idea, generar tres versiones de un post, trabajar su redaccion, resolver imagenes propias o generadas, colocarlas en mockups reutilizables de 1080 x 1350 y, solo tras aprobacion explicita, guardar el material final en Google Drive.
 ---
 
 # LinkedIn Aftercode
@@ -16,6 +16,7 @@ No trabajar prospeccion outbound, mensajes de venta, Waalaxy ni busquedas boolea
 - Leer `references/pilares-contenido.md` para elegir temas y angulos.
 - Leer `references/formatos-post.md` antes de redactar.
 - Leer `references/imagenes-linkedin.md` al llegar a la etapa de imagenes.
+- Leer `references/galeria-mockups.md` despues de aprobar la imagen principal y antes de crear su composicion final.
 - Leer `references/archivos-salida.md` antes de crear archivos locales.
 - Investigar informacion vigente cuando el post dependa de novedades actuales y guardar las fuentes usadas en `FUENTES.md`.
 - Usar Google Drive solo al final del flujo y con confirmacion explicita.
@@ -62,10 +63,18 @@ Solo despues de aprobar el post, preguntar:
 
 `¿Tenés imágenes para acompañar el post?`
 
-- Si tiene imagenes, pedir que las adjunte. Conservar los archivos exactamente como fueron entregados: no editar, recortar, comprimir, renombrar ni regenerar salvo pedido expreso. Mostrar o enumerar lo recibido para confirmar el conjunto.
+- Si tiene imagenes, pedir que las adjunte. Conservar los archivos originales exactamente como fueron entregados: no editar, recortar, comprimir, renombrar ni regenerar. Mostrar o enumerar lo recibido para confirmar el conjunto.
 - Si no tiene imagenes, crear tres propuestas visuales diferentes siguiendo `references/imagenes-linkedin.md`. Generar las tres imagenes reales y mostrarlas en la conversacion antes de preparar cualquier subida a Drive. Permitir que elija una, pida cambios, combine enfoques o descarte todas.
 
 No sustituir las tres imagenes por descripciones o prompts, salvo que el usuario pida solo conceptos.
+
+Despues de aprobar una imagen principal, aplicar `references/galeria-mockups.md`:
+
+- elegir la base mas conveniente segun el contenido, la orientacion y los colores, o mostrar dos o tres alternativas cuando haya varias opciones buenas;
+- colocar la imagen unicamente dentro del area que en la base dice `Drop or Paste`;
+- conservar sin cambios el fondo, dispositivo, navegador y demas elementos de la plantilla;
+- exportar siempre en 1080 x 1350 px;
+- mostrar la composicion y esperar aprobacion antes de Drive.
 
 ### 5. Aprobar el paquete final
 
@@ -73,6 +82,7 @@ Antes de subir, dejar claro que el paquete contiene:
 
 - el post final aprobado;
 - las imagenes originales entregadas por el usuario, o las imagenes generadas que haya aprobado;
+- los mockups finales de 1080 x 1350 que haya aprobado;
 - las fuentes, si hubo investigacion actual.
 
 Pedir confirmacion explicita para subir ese paquete a Drive. Un pedido directo como `subilo a Drive` cuenta como confirmacion. Nunca subir propuestas descartadas, imagenes no aprobadas ni materiales intermedios.
@@ -81,7 +91,7 @@ Pedir confirmacion explicita para subir ese paquete a Drive. Un pedido directo c
 
 Tras la aprobacion del paquete, seguir `references/archivos-salida.md`. Crear una sola carpeta para el post final; no crear una carpeta por cada opcion inicial.
 
-Mantener la integracion de Google Drive existente. Si no hay una carpeta base acordada, preguntar donde guardar el material. Subir juntos el post final y las imagenes aprobadas u originales. Al terminar, informar la ubicacion o enlace y el contenido subido.
+Mantener la integracion de Google Drive existente. Si no hay una carpeta base acordada, preguntar donde guardar el material. Subir juntos el post final, las imagenes originales o generadas aprobadas y los mockups finales aprobados. Al terminar, informar la ubicacion o enlace y el contenido subido.
 
 ## Voz editorial
 
