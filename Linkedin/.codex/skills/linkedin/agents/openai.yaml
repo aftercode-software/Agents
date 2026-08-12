@@ -1,4 +1,4 @@
 interface:
   display_name: "LinkedIn Aftercode"
-  short_description: "Crea contenido humano para LinkedIn."
-  default_prompt: "Usa $linkedin para crear propuestas de publicaciones para mi perfil personal de LinkedIn."
+  short_description: "Posts humanos, breves y listos para publicar."
+  default_prompt: "Usa $linkedin para conversar sobre un tema, crear tres opciones de post y pulir la elegida conmigo."

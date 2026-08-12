@@ -1,0 +1,76 @@
+{"kind":"deck","id":"pr/0x0ruy","name":"Deck"}
+{"kind":"layout","layoutId":"e7d80bef-005d-4f2e-a7de-fdcf5d1a3e25","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"15c0a858-fc7a-42ae-bbd0-6f523e8c02f7","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/2ifyu5","slide":1,"title":"LEGALI","textShapes":7}
+{"kind":"textbox","id":"sh/03ixwrml","slide":1,"text":"LEGALI","textPreview":"LEGALI","textChars":6,"textLines":1,"bbox":[72,72,220,36]}
+{"kind":"textbox","id":"sh/z29gnml0","slide":1,"text":"No todas las tareas\nde una profesión\nrequieren el mismo\ntipo de atención.","textPreview":"No todas las tareas | de una profesión | requieren el mismo | tipo de atención.","textChars":73,"textLines":4,"bbox":[72,180,660,330]}
+{"kind":"textbox","id":"sh/y10fuh4v","slide":1,"text":"Algunas requieren criterio.\nOtras son necesarias, pero repetitivas.","textPreview":"Algunas requieren criterio. | Otras son necesarias, pero repetitivas.","textChars":67,"textLines":2,"bbox":[76,560,620,100]}
+{"kind":"shape","id":"sh/9sbytg3i","slide":1,"bbox":[72,720,420,8]}
+{"kind":"textbox","id":"sh/8r2x0bmx","slide":1,"text":"Un caso de tecnología aplicada a un proceso real.","textPreview":"Un caso de tecnología aplicada a un proceso real.","textChars":49,"textLines":1,"bbox":[72,760,560,50]}
+{"kind":"shape","id":"sh/nqtgr6lc","slide":1,"bbox":[750,116,360,720]}
+{"kind":"textbox","id":"sh/xwbyxg3e","slide":1,"text":"Software que devuelve tiempo.","textPreview":"Software que devuelve tiempo.","textChars":29,"textLines":1,"bbox":[770,160,310,52]}
+{"kind":"textbox","id":"sh/wv2h4bmt","slide":1,"text":"AFTERCODE  /  LEGALI","textPreview":"AFTERCODE  /  LEGALI","textChars":20,"textLines":1,"bbox":[72,1128,360,28]}
+{"kind":"textbox","id":"sh/ul0byh47","slide":1,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[1080,1128,48,28]}
+{"kind":"image","id":"im/ni1ojuls","slide":1,"name":"","geometry":"roundRect","alt":"Pantalla principal de Legali","bbox":[770,250,320,460]}
+{"kind":"notes","id":"nt/2ifyu5","slide":1,"text":""}
+{"kind":"slide","id":"sl/otu8lx","slide":2,"title":"EL PROBLEMA","textShapes":14}
+{"kind":"textbox","id":"sh/wrqx8vux","slide":2,"text":"EL PROBLEMA","textPreview":"EL PROBLEMA","textChars":11,"textLines":1,"bbox":[72,72,220,32]}
+{"kind":"textbox","id":"sh/vqhwfqdc","slide":2,"text":"Hay tareas necesarias\nque consumen horas.","textPreview":"Hay tareas necesarias | que consumen horas.","textChars":41,"textLines":2,"bbox":[72,142,800,150]}
+{"kind":"textbox","id":"sh/u58f6lcr","slide":2,"text":"Generar boletas, preparar cédulas, confeccionar escritos\ne iniciar expedientes puede convertirse en una rutina interminable.","textPreview":"Generar boletas, preparar cédulas, confeccionar escritos | e iniciar expedientes puede convertirse en una rutina interminable.","textChars":124,"textLines":2,"bbox":[76,340,800,92]}
+{"kind":"textbox","id":"sh/94zedgv6","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[78,520,60,40]}
+{"kind":"shape","id":"sh/836x4vul","slide":2,"bbox":[150,522,520,56]}
+{"kind":"textbox","id":"sh/72xwbqd0","slide":2,"text":"Generar boletas","textPreview":"Generar boletas","textChars":15,"textLines":1,"bbox":[180,535,420,32]}
+{"kind":"textbox","id":"sh/m1ov2lcf","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[78,632,60,40]}
+{"kind":"shape","id":"sh/l0fe9gva","slide":2,"bbox":[150,634,520,56]}
+{"kind":"textbox","id":"sh/kz6d0bup","slide":2,"text":"Preparar cédulas","textPreview":"Preparar cédulas","textChars":16,"textLines":1,"bbox":[180,647,420,32]}
+{"kind":"textbox","id":"sh/2t8rm5k7","slide":2,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[78,744,60,40]}
+{"kind":"shape","id":"sh/3u18va1s","slide":2,"bbox":[150,746,520,56]}
+{"kind":"textbox","id":"sh/4va9ov2d","slide":2,"text":"Confeccionar escritos","textPreview":"Confeccionar escritos","textChars":21,"textLines":1,"bbox":[180,759,420,32]}
+{"kind":"textbox","id":"sh/pwjqx0ji","slide":2,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[78,856,60,40]}
+{"kind":"shape","id":"sh/up8rilkv","slide":2,"bbox":[150,858,520,56]}
+{"kind":"textbox","id":"sh/fqh8rq1g","slide":2,"text":"Iniciar expedientes","textPreview":"Iniciar expedientes","textChars":19,"textLines":1,"bbox":[180,871,420,32]}
+{"kind":"shape","id":"sh/grq9kv21","slide":2,"bbox":[760,500,350,410]}
+{"kind":"textbox","id":"sh/61o7elkz","slide":2,"text":"Tiempo que podría\nestar dedicado a la profesión.","textPreview":"Tiempo que podría | estar dedicado a la profesión.","textChars":48,"textLines":2,"bbox":[790,820,290,70]}
+{"kind":"textbox","id":"sh/72x8nq1k","slide":2,"text":"AFTERCODE  /  LEGALI","textPreview":"AFTERCODE  /  LEGALI","textChars":20,"textLines":1,"bbox":[72,1128,360,28]}
+{"kind":"textbox","id":"sh/v6dovmhc","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1080,1128,48,28]}
+{"kind":"image","id":"im/ylkv2907","slide":2,"name":"","geometry":"roundRect","alt":"Referencia visual del problema","bbox":[785,545,300,260]}
+{"kind":"notes","id":"nt/otu8lx","slide":2,"text":""}
+{"kind":"slide","id":"sl/cjbisy","slide":3,"title":"EL PUNTO DE PARTIDA","textShapes":7}
+{"kind":"textbox","id":"sh/qdojedkr","slide":3,"text":"EL PUNTO DE PARTIDA","textPreview":"EL PUNTO DE PARTIDA","textChars":19,"textLines":1,"bbox":[72,72,320,32]}
+{"kind":"textbox","id":"sh/dgz29s32","slide":3,"text":"Hace aproximadamente\nun año, una conversación\nnos mostró el problema.","textPreview":"Hace aproximadamente | un año, una conversación | nos mostró el problema.","textChars":69,"textLines":3,"bbox":[72,150,690,210]}
+{"kind":"textbox","id":"sh/sfqlgn2h","slide":3,"text":"Una Oficial de Justicia nos contó\ncuánto tiempo se perdía en tareas repetitivas.","textPreview":"Una Oficial de Justicia nos contó | cuánto tiempo se perdía en tareas repetitivas.","textChars":80,"textLines":2,"bbox":[76,430,675,92]}
+{"kind":"shape","id":"sh/fihkbil8","slide":3,"bbox":[72,610,590,120]}
+{"kind":"textbox","id":"sh/eh83idkn","slide":3,"text":"De esa conversación nació Legali,\nuno de los primeros productos propios de Aftercode.","textPreview":"De esa conversación nació Legali, | uno de los primeros productos propios de Aftercode.","textChars":85,"textLines":2,"bbox":[104,638,530,72]}
+{"kind":"shape","id":"sh/1kz2ds3e","slide":3,"bbox":[770,130,350,720]}
+{"kind":"textbox","id":"sh/nm1kf2l4","slide":3,"text":"Una herramienta pensada\npara el trabajo real.","textPreview":"Una herramienta pensada | para el trabajo real.","textChars":45,"textLines":2,"bbox":[792,805,306,70]}
+{"kind":"textbox","id":"sh/2l83mxkj","slide":3,"text":"AFTERCODE  /  LEGALI","textPreview":"AFTERCODE  /  LEGALI","textChars":20,"textLines":1,"bbox":[72,1128,360,28]}
+{"kind":"textbox","id":"sh/0vi1wjqh","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1080,1128,48,28]}
+{"kind":"image","id":"im/18fy5k3u","slide":3,"name":"","geometry":"roundRect","alt":"Interfaz de Legali","bbox":[790,170,310,610]}
+{"kind":"notes","id":"nt/cjbisy","slide":3,"text":""}
+{"kind":"slide","id":"sl/4ganb3","slide":4,"title":"EL IMPACTO","textShapes":10}
+{"kind":"textbox","id":"sh/9c769c7u","slide":4,"text":"EL IMPACTO","textPreview":"EL IMPACTO","textChars":10,"textLines":1,"bbox":[72,72,220,32]}
+{"kind":"textbox","id":"sh/29gnyx83","slide":4,"text":"Legali devuelve\ntiempo.","textPreview":"Legali devuelve | tiempo.","textChars":23,"textLines":2,"bbox":[72,150,520,140]}
+{"kind":"textbox","id":"sh/napo72po","slide":4,"text":"Hoy ahorra el 85% del tiempo\nque antes llevaban esas tareas repetitivas.","textPreview":"Hoy ahorra el 85% del tiempo | que antes llevaban esas tareas repetitivas.","textChars":72,"textLines":2,"bbox":[76,340,650,86]}
+{"kind":"shape","id":"sh/07e5w7qx","slide":4,"bbox":[72,520,510,230]}
+{"kind":"textbox","id":"sh/18n65s7i","slide":4,"text":"85%","textPreview":"85%","textChars":3,"textLines":1,"bbox":[110,556,300,100]}
+{"kind":"textbox","id":"sh/e5wnux87","slide":4,"text":"menos tiempo en\ntareas repetitivas","textPreview":"menos tiempo en | tareas repetitivas","textChars":34,"textLines":2,"bbox":[114,664,340,70]}
+{"kind":"shape","id":"sh/f65o32pc","slide":4,"bbox":[72,800,510,150]}
+{"kind":"textbox","id":"sh/s3e5snq1","slide":4,"text":"+10.000","textPreview":"+10.000","textChars":7,"textLines":1,"bbox":[110,828,300,60]}
+{"kind":"textbox","id":"sh/d4n61s7m","slide":4,"text":"boletas ya procesadas","textPreview":"boletas ya procesadas","textChars":21,"textLines":1,"bbox":[114,892,360,32]}
+{"kind":"shape","id":"sh/9w361oj6","slide":4,"bbox":[710,160,410,730]}
+{"kind":"textbox","id":"sh/7uloze10","slide":4,"text":"Y seguimos contando.","textPreview":"Y seguimos contando.","textChars":20,"textLines":1,"bbox":[735,750,360,50]}
+{"kind":"textbox","id":"sh/mtcnq90f","slide":4,"text":"AFTERCODE  /  LEGALI","textPreview":"AFTERCODE  /  LEGALI","textChars":20,"textLines":1,"bbox":[72,1128,360,28]}
+{"kind":"textbox","id":"sh/ls3mx4ju","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1080,1128,48,28]}
+{"kind":"image","id":"im/bit0zyd8","slide":4,"name":"","geometry":"roundRect","alt":"Flujo de generación de boletas en Legali","bbox":[735,225,360,470]}
+{"kind":"notes","id":"nt/4ganb3","slide":4,"text":""}
+{"kind":"slide","id":"sl/8ivbca","slide":5,"title":"EL APRENDIZAJE","textShapes":7}
+{"kind":"textbox","id":"sh/7ehsbax0","slide":5,"text":"EL APRENDIZAJE","textPreview":"EL APRENDIZAJE","textChars":14,"textLines":1,"bbox":[72,72,240,32]}
+{"kind":"textbox","id":"sh/8fq94fyl","slide":5,"text":"Ese es el objetivo que buscamos\nen cada desarrollo:","textPreview":"Ese es el objetivo que buscamos | en cada desarrollo:","textChars":51,"textLines":2,"bbox":[72,180,950,140]}
+{"kind":"shape","id":"sh/tgzadkf6","slide":5,"bbox":[72,420,1050,260]}
+{"kind":"textbox","id":"sh/uhsr6pgr","slide":5,"text":"devolverles tiempo a las personas\npara que puedan enfocarse en\nlo que realmente importa.","textPreview":"devolverles tiempo a las personas | para que puedan enfocarse en | lo que realmente importa.","textChars":88,"textLines":3,"bbox":[126,472,940,170]}
+{"kind":"textbox","id":"sh/v21sfuxc","slide":5,"text":"El mejor software empieza escuchando a quienes viven el problema.","textPreview":"El mejor software empieza escuchando a quienes viven el problema.","textChars":65,"textLines":1,"bbox":[160,800,880,50]}
+{"kind":"shape","id":"sh/g3a98zyx","slide":5,"bbox":[72,930,260,8]}
+{"kind":"textbox","id":"sh/h4jah4fi","slide":5,"text":"Aftercode  /  Legali","textPreview":"Aftercode  /  Legali","textChars":20,"textLines":1,"bbox":[72,972,360,38]}
+{"kind":"textbox","id":"sh/i5sra9gn","slide":5,"text":"AFTERCODE  /  LEGALI","textPreview":"AFTERCODE  /  LEGALI","textChars":20,"textLines":1,"bbox":[72,1128,360,28]}
+{"kind":"textbox","id":"sh/361sjex8","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1080,1128,48,28]}
+{"kind":"notes","id":"nt/8ivbca","slide":5,"text":""}

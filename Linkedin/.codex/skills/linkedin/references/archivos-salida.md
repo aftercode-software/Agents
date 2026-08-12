@@ -1,6 +1,6 @@
 # Archivos de salida
 
-Crear una carpeta por idea:
+Crear una sola carpeta por post final aprobado. No crear archivos ni carpetas para las tres opciones iniciales mientras se esta conversando y puliendo el texto.
 
 `Linkedin/posts/YYYY-MM-DD-nombre-de-la-idea/`
 
@@ -37,15 +37,9 @@ Estructura:
 ```md
 # Post LinkedIn
 
-## Version principal
+## Version final aprobada
 
-## Version alternativa
-
-## CTA o pregunta final
-
-## Hashtags sugeridos
-
-## Notas de edicion
+## Fecha de aprobacion
 ```
 
 ## `IMAGEN.md`
@@ -85,6 +79,8 @@ Crear cuando haya investigacion actual.
 ## `DRIVE.md`
 
 Crear si se prepara o realiza subida a Drive.
+
+No marcar la subida como realizada hasta que exista confirmacion explicita del usuario y se haya subido el paquete final completo.
 
 ```md
 # Drive
