@@ -1,6 +1,6 @@
 ---
 name: aftercode-presupuesto-integral
-description: Crear y gestionar presupuestos comerciales de Aftercode de punta a punta. Usar cuando el usuario quiera relevar un proyecto, hacer un ping pong de preguntas y respuestas, analizar archivos o documentacion disponible, definir alcance y exclusiones, estimar horas por rol, redactar el presupuesto final siguiendo la plantilla del proyecto y, con confirmacion explicita, subirlo a Google Drive usando la plantilla "Presupuesto base".
+description: Crear y gestionar presupuestos comerciales de Aftercode de punta a punta. Usar cuando el usuario quiera relevar un proyecto desde documentacion o un `.docx`, definir alcance y exclusiones, estimar horas opcionalmente en una copia de `Presupuestador base` de Google Sheets o usar una planilla proporcionada, redactar el presupuesto final y, con confirmacion explicita, subirlo a Google Drive usando la plantilla `Presupuesto base`.
 ---
 
 # Aftercode Presupuesto Integral
@@ -10,8 +10,11 @@ Guiar el proceso en cuatro etapas con compuertas claras de confirmacion. Avanzar
 ## Recursos a usar
 
 - Leer `references/plantillas-presupuestos.md` para respetar la estructura de `Pagina web basica` o `Sistema complejo`.
+- Leer `references/horas-presupuestador.md` durante la etapa 2 cuando se deba calcular horas desde requisitos o usar una planilla proporcionada.
 - Si el usuario aporta archivos, notas, propuestas previas o documentacion, analizarlos antes de formular preguntas nuevas.
-- Para la etapa de Google Drive, usar las capacidades del plugin `Google Drive` y, si hace falta editar el contenido del documento, seguir tambien el skill `google-drive:google-docs`.
+- Para la etapa de Google Drive, usar las capacidades del plugin `Google Drive`.
+- Para copiar y completar `Presupuestador base`, seguir tambien el skill `google-drive:google-sheets`.
+- Para editar el Google Doc final, seguir tambien el skill `google-drive:google-docs`.
 
 ## Flujo obligatorio
 
@@ -60,9 +63,49 @@ Adaptar las preguntas al caso, sin usar siempre todas:
 
 Cerrar la etapa solo cuando puedas redactar un resumen preciso del alcance y el usuario no tenga correcciones sustanciales sobre esa definicion.
 
-### Etapa 2: Definicion funcional y estimacion
+### Etapa 2: Definicion funcional y estimacion opcional
 
-Crear una carpeta local del cliente y dejar por escrito el alcance funcional y la estimacion operativa.
+Crear una carpeta local del cliente y dejar por escrito el alcance funcional y, cuando corresponda, la estimacion operativa.
+
+#### Elegir el modo de horas
+
+La estimacion de horas no es obligatoria ni requiere una invocacion separada. Elegir el modo a partir de lo que el usuario entregue:
+
+- **Calcular horas:** si el usuario pide presupuesto con estimacion, leer el `.docx` o los requisitos disponibles, copiar `Presupuestador base` y completar la tabla usando sus ejemplos como calibracion.
+- **Usar planilla proporcionada:** si el usuario entrega un enlace, ID o archivo de horas ya completado, inspeccionarlo y usarlo como fuente de horas para generar el presupuesto. No recalcular ni modificar la planilla salvo pedido explicito.
+- **Omitir horas:** si el usuario pide generar el presupuesto sin estimacion, no crear ni inventar horas. Registrar en `HORAS_HOMBRE.md` que la estimacion fue omitida a pedido del usuario y marcar como pendientes los plazos, inversion o datos que dependan de ella.
+
+Si el usuario pide directamente "presupuesto + horas", ejecutar la estimacion y la redaccion del presupuesto dentro del mismo flujo, sin exigir una invocacion separada. No pedir una confirmacion intermedia si el alcance, la fuente de horas y los datos comerciales estan suficientemente cerrados; mantener la confirmacion explicita obligatoria antes de publicar en Google Drive.
+
+#### Requisitos desde `.docx` y calculo en `Presupuestador base`
+
+- Este bloque aplica solo al modo **Calcular horas**. Si el usuario entrega una planilla ya completada o pide omitir horas, seguir el modo correspondiente y no forzar este flujo.
+- Si el usuario aporta un documento `.docx` con los requisitos, leerlo completo antes de formular preguntas nuevas. Revisar tambien sus tablas, listas y encabezados.
+- Extraer del documento el objetivo, funcionalidades, modulos, usuarios, roles, integraciones, restricciones, exclusiones y pendientes.
+- Dar prioridad a las instrucciones explicitas del usuario si contradicen el documento y registrar la contradiccion cuando afecte la estimacion.
+- Seguir `references/horas-presupuestador.md` para localizar el archivo nativo de Google Sheets `Presupuestador base` en la raiz de My Drive, copiarlo y completar su tabla de horas.
+- La copia de `Presupuestador base` es el lugar de trabajo para la estimacion numerica. No editar la plantilla original, no reconstruirla desde cero y no confundirla con el Google Doc `Presupuesto base` de la etapa 4.
+- Identificar mediante lectura de metadatos la pestana y el rango reales de la tabla de horas. No asumir nombres de pestana, rangos, columnas ni formulas.
+- Para cada tarea, usar como referencia el ejemplo existente mas parecido en `Presupuestador base`. Partir de sus horas y mantenerlas si el alcance es equivalente; ajustar solo por diferencias concretas de alcance o complejidad y documentar el motivo.
+- Por ejemplo, si el ejemplo de login tiene 4 horas, un nuevo flujo de login equivalente debe quedar cerca de 4 horas. No usar una cifra arbitraria ni cambiar la escala sin justificarlo.
+- Mapear los requisitos a modulos, tareas, roles y horas; completar solo las celdas de entrada y preservar formulas, formato, validaciones y estructura nativa.
+- Verificar la copia, los rangos escritos, las formulas y los totales despues de la escritura. El desglose y total de `HORAS_HOMBRE.md` deben coincidir con la hoja.
+- Antes de crear la copia y escribir en Drive, informar que documento `.docx`, que plantilla y que nombre de copia se usaran. La solicitud explicita de copiar y completar el presupuestador cuenta como autorizacion; si el usuario solo pidio una estimacion local, pedir confirmacion antes de la mutacion externa.
+
+#### Planilla de horas proporcionada por el usuario
+
+- Este bloque aplica solo al modo **Usar planilla proporcionada**.
+- Groundear el archivo exacto mediante su URL, ID o ubicación y leer sus metadatos antes de usarlo.
+- Identificar la pestaña, rango, formulas y total que contienen la estimacion. No asumir nombres de pestaña ni rangos.
+- Tratar la planilla proporcionada como fuente de solo lectura. No copiarla, editarla ni recalcularla salvo pedido explicito.
+- Usar sus horas, roles, totales y supuestos como fuente para `PRESUPUESTO.md`. Registrar el enlace o ruta, la pestaña, el rango y cualquier dato faltante.
+- Si la planilla no contiene suficiente información para respaldar el presupuesto, pedir solo los datos faltantes o marcar la sección correspondiente como pendiente.
+
+#### Sin estimacion de horas
+
+- Este bloque aplica solo al modo **Omitir horas**.
+- No inventar horas, plazos, inversión ni forma de pago derivados de una estimación inexistente.
+- Crear `HORAS_HOMBRE.md` únicamente como registro breve de que la estimación fue omitida, o actualizarlo sin borrar información existente.
 
 #### Carpeta de trabajo
 
@@ -103,6 +146,14 @@ Incluir como minimo:
 - horas por rol
 - total estimado
 - riesgos que pueden aumentar o reducir el esfuerzo
+- documento de requisitos utilizado
+- nombre, enlace, pestana y rango de la copia de `Presupuestador base`
+- total reconciliado con la hoja
+- ejemplo de la plantilla usado como referencia para cada tarea
+- horas base y ajustes aplicados
+
+- En el modo **Usar planilla proporcionada**, incluir la fuente de la planilla, su enlace o ruta, pestaña, rango, total y supuestos utilizados.
+- En el modo **Omitir horas**, indicar que la estimación fue omitida a pedido del usuario y listar los datos que quedan pendientes.
 
 Roles posibles, segun el caso:
 
@@ -119,8 +170,11 @@ No forzar roles que no aporten. Si un rol no aplica, omitirlo.
 
 #### Cierre de etapa
 
-- Mostrar al usuario el contenido o un resumen fiel de `FUNCIONALIDADES.md` y `HORAS_HOMBRE.md`.
-- Pedir confirmacion antes de pasar a la etapa 3.
+- Mostrar al usuario el contenido o un resumen fiel de `FUNCIONALIDADES.md` y, si corresponde, `HORAS_HOMBRE.md`.
+- En el modo **Calcular horas**, informar el enlace de la copia de `Presupuestador base`, la pestana y el rango completados, junto con el total verificado.
+- En el modo **Usar planilla proporcionada**, informar la fuente utilizada, la pestana, el rango y el total leido.
+- En el modo **Omitir horas**, informar explicitamente que la estimacion fue omitida y que datos quedan pendientes.
+- Pasar a la etapa 3 dentro del mismo flujo cuando el usuario haya pedido directamente el presupuesto y no existan ambiguedades materiales. Pedir confirmacion solo si hay correcciones sustanciales pendientes o si el usuario solicito revisar la estimacion antes de redactar.
 - Si el usuario corrige funcionalidades o tiempos, actualizar ambos archivos antes de seguir.
 
 ### Etapa 3: Redaccion del presupuesto
