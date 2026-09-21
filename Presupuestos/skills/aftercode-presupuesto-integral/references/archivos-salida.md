@@ -43,6 +43,8 @@ Estructura sugerida:
 
 ## Cliente
 
+## Modo de estimacion
+
 ## Criterio de estimacion
 
 ## Supuestos de productividad con IA
@@ -60,6 +62,26 @@ Dentro de `Desglose por rol`, listar cada rol con:
 - tareas principales
 - horas estimadas
 - comentarios o supuestos
+
+Cuando se use `Presupuestador base`, agregar tambien:
+
+```md
+## Documento de requisitos utilizado
+
+## Presupuestador base
+
+## Enlace a la copia
+
+## Pestaña y rango completados
+
+## Total reconciliado con la hoja
+
+## Referencias de estimacion
+
+Para cada tarea estimada, registrar el ejemplo de `Presupuestador base` utilizado como referencia, sus horas base y cualquier ajuste aplicado.
+```
+
+En el modo `Usar planilla proporcionada`, reemplazar las referencias de `Presupuestador base` por la fuente real utilizada. En el modo `Omitir horas`, indicar que la estimacion fue omitida a pedido del usuario y listar los datos pendientes.
 
 ## `PRESUPUESTO.md`
 
