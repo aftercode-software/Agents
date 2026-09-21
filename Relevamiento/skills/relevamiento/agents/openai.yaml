@@ -1,0 +1,4 @@
+interface:
+  display_name: "Relevamiento"
+  short_description: "Define alcance, arquitectura y costos operativos."
+  default_prompt: "Usa $relevamiento para analizar este proyecto, completar lo que falta y recomendar alcance, tecnologías, infraestructura y evolución con costos operativos fundamentados."

@@ -22,6 +22,15 @@ Guiar el proceso en cuatro etapas con compuertas claras de confirmacion. Avanzar
 
 Entender el proyecto con precision antes de escribir archivos de salida.
 
+#### Relevamiento previo
+
+- Si el usuario aporta un relevamiento de `relevamiento` o una carpeta de proyecto ya analizada, leer `RELEVAMIENTO.md`, `FUNCIONALIDADES.md`, `ARQUITECTURA.md` y `COSTOS_OPERATIVOS.md` cuando existan. Reutilizar esa carpeta y registrar las rutas y la fecha/version del alcance como fuente.
+- Usar `FUNCIONALIDADES.md` como alcance canonico. Mantener identificadores, exclusiones y estados; una funcionalidad propuesta o futura no se convierte automaticamente en trabajo incluido.
+- No repetir el descubrimiento resuelto ni exigir los cuatro archivos para presupuestar. Preguntar solo por vacios, contradicciones o cambios materiales; si la informacion es suficiente, continuar con la etapa 2.
+- Respetar el estado del traspaso: listo para estimar, estimacion condicionada o bloqueado para estimacion confiable. Identificar el impacto por modulo y estimar lo independiente cuando corresponda, sin dar un total cerrado para partes bloqueadas.
+- Separar los costos operativos del precio de construccion y las horas. Reutilizar sus fuentes y supuestos, verificando las tarifas cambiantes antes de presentarlas como actuales; no trasladar margenes ni costos de ejemplo.
+- Si el pedido consiste principalmente en completar el relevamiento, comparar soluciones o definir arquitectura e infraestructura, usar `relevamiento` si esta disponible. Si no lo esta, continuar con el relevamiento de esta etapa indicando las incertidumbres tecnicas que queden pendientes.
+
 #### Objetivo
 
 Obtener una definicion clara de:
