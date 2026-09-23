@@ -1,6 +1,6 @@
 ---
 name: relevamiento
-description: Analizar y completar el relevamiento de un proyecto antes de presupuestar o construir. Usar para bajar una idea a tierra, revisar requisitos o un sistema existente, comparar soluciones y tecnologías, definir infraestructura, proyectar costos operativos y planificar su evolución.
+description: Analizar y completar el relevamiento de un proyecto antes de presupuestar o construir. Usar para bajar una idea a tierra, desglosar funcionalidades o historias de usuario estimables por frontend y backend, revisar requisitos, comparar soluciones y tecnologías, definir infraestructura, proyectar costos operativos y planificar su evolución.
 ---
 
 # Relevamiento
@@ -23,9 +23,11 @@ El resultado debe explicar qué problema resolver, para quién, qué construir p
 Leer solo las referencias necesarias para la etapa en curso:
 
 1. **Comprender y completar el alcance:** leer [discovery.md](references/discovery.md). Identificar procesos, usuarios, reglas, excepciones, restricciones y criterios de éxito.
+   Para convertir el relevamiento en funcionalidades, historias de usuario o tareas estimables, leer [funcionalidades.md](references/funcionalidades.md). En un relevamiento completo, incluir ese desglose con responsabilidades frontend/backend, complejidad e incertidumbre.
+   Para preparar evidencia de esfuerzo y usar antecedentes, leer [estimabilidad.md](references/estimabilidad.md). Consultar [casos-aftercode.md](references/casos-aftercode.md) solo al comparar experiencias de Aftercode o cuando el usuario invoque MCD/AfterAccess como referencia; sus cifras no son valores por defecto.
 2. **Evaluar soluciones y tecnologías:** leer [arquitectura.md](references/arquitectura.md). Comparar alternativas viables, recomendar una y documentar sus consecuencias.
 3. **Proyectar operación y crecimiento:** leer [costos-operativos.md](references/costos-operativos.md). Dimensionar escenarios, investigar tarifas y explicar qué impulsa el gasto.
-4. **Documentar o entregar a presupuestos:** leer [entregables.md](references/entregables.md). Mantener una fuente de alcance y registrar qué permite o impide estimar.
+4. **Documentar o entregar a presupuestos:** leer [entregables.md](references/entregables.md) y [traspaso-presupuestos.md](references/traspaso-presupuestos.md). Mantener una fuente de alcance y registrar qué permite o impide estimar, las fuentes numéricas elegidas y el modo de horas solicitado.
 
 En una idea temprana puede bastar con definir el problema y las próximas validaciones. En un relevamiento completo, cubrir las cuatro etapas con el detalle necesario. Evitar secciones vacías o preguntas irrelevantes.
 
@@ -44,6 +46,7 @@ En una idea temprana puede bastar con definir el problema y las próximas valida
 - Si una incertidumbre requiere una prueba técnica, definir primero la pregunta, el experimento mínimo y el criterio de éxito. Ejecutarlo solo dentro de los recursos y acciones autorizados; distinguir propuesta, prueba realizada y resultado.
 - Respetar tecnologías, presupuesto y alcance explícitos del usuario. Cuando una restricción haga inviable una opción, justificarlo con evidencia.
 - Mantener separados esfuerzo de construcción, costos de operación y precio comercial. El detalle de horas y la propuesta comercial corresponden al agente de presupuestos.
+- Conservar horas y valores aportados con su fuente y granularidad, distinguiendo medición, dedicación aproximada y estimación. No repartir totales por área entre funcionalidades ni convertir antecedentes en tarifas/productividad universales.
 - No prometer escalabilidad ilimitada, disponibilidad ni cumplimiento normativo sin requisitos y evidencia que lo sostengan.
 
 ## Cierre

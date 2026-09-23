@@ -39,6 +39,8 @@ Asignar identificadores estables a requisitos que deban seguirse entre documento
 
 Ajustar la formalidad al caso: una web pequeña puede usar una tabla corta. No agregar módulos solo porque sean habituales en otros proyectos.
 
+Convertir los requisitos en un listado de funcionalidades y tareas siguiendo [funcionalidades.md](funcionalidades.md). Revisar la cobertura de los procesos y fuentes antes del traspaso; un listado de pantallas o nombres de módulos no basta para estimar.
+
 ## Supuestos y validaciones
 
 Para cada incertidumbre importante, explicar qué estamos suponiendo, qué evidencia hay, qué decisión depende de ella y cómo comprobarla con el menor esfuerzo útil. Priorizar por consecuencia de equivocarse y falta de evidencia; no fabricar puntajes ni probabilidades.
