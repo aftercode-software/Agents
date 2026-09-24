@@ -2,10 +2,12 @@
 
 Usar esta referencia durante la etapa 2 cuando se deban calcular horas desde requisitos o usar una planilla de horas proporcionada por el usuario.
 
+Aplicar tambien [traspaso-presupuestos.md](traspaso-presupuestos.md) para conservar fuentes seleccionadas, IDs, granularidad y modo de horas. Las instrucciones de copia/carga siguientes aplican cuando se solicito trabajar en Sheets y existe autorizacion; una estimacion exclusivamente local no requiere escritura externa.
+
 ## Modos de trabajo
 
 - **Calcular horas:** leer los requisitos y completar una copia de `Presupuestador base`.
-- **Usar planilla proporcionada:** leer una planilla existente como fuente de horas, sin recalcularla ni modificarla salvo pedido explícito.
+- **Usar horas proporcionadas:** conservar las horas indicadas por el usuario en una planilla, documento o mensaje, sin recalcularlas ni modificar su fuente salvo pedido explícito.
 - **Omitir horas:** no ejecutar este flujo; registrar que la estimación fue omitida y marcar como pendientes los datos dependientes.
 
 ## Documento de requisitos `.docx`
@@ -26,7 +28,7 @@ Si el `.docx` está en Google Drive, localizarlo primero con el flujo de Google 
 
 ## Planilla proporcionada por el usuario
 
-Aplicar esta sección solo en el modo **Usar planilla proporcionada**.
+Aplicar esta sección solo cuando el modo **Usar horas proporcionadas** usa una planilla. Para documentos o mensajes, registrar la fuente, valores y granularidad sin exigir planilla ni inventar pestañas/rangos.
 
 1. Identificar el archivo exacto mediante su URL, ID o ubicación.
 2. Leer sus metadatos antes de consultar rangos y confirmar las pestañas visibles.
@@ -34,6 +36,8 @@ Aplicar esta sección solo en el modo **Usar planilla proporcionada**.
 4. Tratar la planilla como fuente de solo lectura. No copiarla, editarla ni recalcularla salvo pedido explícito.
 5. Usar las horas, roles, totales y supuestos disponibles para generar el presupuesto.
 6. Registrar en `HORAS_HOMBRE.md` el enlace o ruta, pestaña, rango, total y cualquier dato faltante.
+
+Respetar las pestañas/versiones elegidas y descartadas por el usuario. No mezclar un resumen por áreas con tareas de otro alcance. Conservar las horas por área cuando no existe desglose por funcionalidad; no reconstruirlo mediante reparto proporcional. Mantener el alcance documental y los valores numéricos con sus fuentes respectivas.
 
 Si la planilla no respalda algún dato necesario para el presupuesto, pedir solamente ese dato o marcarlo como pendiente. No completar los huecos con una estimación silenciosa.
 
@@ -54,11 +58,11 @@ La copia y la escritura son una mutación externa. Antes de ejecutarlas, mostrar
 
 1. En la copia, identificar la pestaña y el rango real de la tabla de horas mediante sus metadatos y encabezados. No asumir `Sheet1`, una pestaña llamada `Horas` ni rangos fijos.
 2. Leer encabezados, filas de ejemplo, fórmulas, formato, validaciones y cualquier total existente antes de escribir.
-3. Para cada requisito, buscar primero en la plantilla el ejemplo existente más parecido por tipo de tarea, rol, alcance, complejidad e integraciones. Usar sus horas como referencia de calibración.
-4. Partir de las horas del ejemplo más cercano y conservarlas cuando la nueva tarea tenga un alcance equivalente. Ajustarlas solo si hay una diferencia concreta de alcance o complejidad, y registrar el motivo.
-5. Ejemplo: si la plantilla estima `Login` en 4 horas, un nuevo flujo de login equivalente debe estimarse en torno a 4 horas. Solo aumentar o reducir esa base si incorpora diferencias verificables, como recuperación de contraseña, 2FA, SSO, roles adicionales o una integración externa.
+3. Para cada unidad estimable, buscar una referencia comparable por alcance, tipo de trabajo, rol, complejidad, reutilización, equipo y cobertura de entrega. Registrar si sus horas son medidas, aproximadas o solo presupuestadas.
+4. Usar sus horas como punto de partida solo cuando la comparación sea defendible. Explicar ajustes y supuestos; no forzar un ejemplo lejano ni convertir baja/media/alta en una tabla fija de horas.
+5. Un ejemplo llamado `Login` no alcanza para establecer equivalencia: comprobar recuperación, 2FA/SSO, permisos, servicios existentes, pruebas y revisión. El uso de IA no garantiza que su esfuerzo se reduzca.
 6. Usar el mismo nivel de redondeo y granularidad que la plantilla. Evitar cifras arbitrarias o excesivamente precisas. Si no existe un ejemplo razonablemente comparable, marcar la estimación como provisional y explicar qué supuesto se utilizó.
-7. Mapear los requisitos del `.docx` a módulos, tareas, roles y horas. Mantener separadas las horas de relevamiento, gestión, UX/UI, frontend, backend, QA, DevOps, contenido/SEO u otros roles que realmente apliquen.
+7. Mapear el alcance seleccionado a IDs de unidades estimables, tareas, áreas/roles y horas. No sumar padres e hijos ni repetir transversales. Distinguir frontend web, mobile, backend y otras disciplinas pertinentes sin contar “fullstack” nuevamente como otra capa; explicitar cobertura de relevamiento, harness, revisión, QA y estabilización.
 8. Completar únicamente las celdas de entrada de la tabla. Preservar fórmulas, validaciones, formato, congelamiento y estructura nativa de la plantilla.
 9. Si hace falta agregar filas, hacerlo con la estructura nativa existente y sin convertir la tabla en un rango de valores plano. Si el esquema no permite representar una funcionalidad sin romper la plantilla, detenerse y consultar.
 10. Verificar mediante una lectura posterior las celdas escritas, las fórmulas y los totales. El total de la hoja debe coincidir con `HORAS_HOMBRE.md`.
@@ -79,3 +83,5 @@ En `HORAS_HOMBRE.md` incluir:
 - desglose por rol y total;
 - fórmulas o supuestos relevantes;
 - riesgos, pendientes y diferencias entre el documento y la planilla.
+- versión del alcance, IDs vinculados y partidas condicionadas/bloqueadas; subtotal conocido cuando no se puede cerrar el total;
+- naturaleza y granularidad de las horas; si son agregadas por área, declarar que no hay asignación aprobada por funcionalidad.

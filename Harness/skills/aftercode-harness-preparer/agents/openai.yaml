@@ -1,0 +1,4 @@
+interface:
+  display_name: "Preparador de Harness"
+  short_description: "Convierte relevamientos en harness SDD por proyecto."
+  default_prompt: "Usa $aftercode-harness-preparer para preparar el harness de este proyecto a partir del relevamiento y la versión actual de harness-base. Conserva fuentes e IDs, crea feature list y DER, adapta los perfiles necesarios y verifica los entregables."

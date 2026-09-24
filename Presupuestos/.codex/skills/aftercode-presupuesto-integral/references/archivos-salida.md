@@ -2,6 +2,8 @@
 
 Usar esta referencia para mantener consistencia entre presupuestos.
 
+Si ya hay entregables de relevamiento, conservar su carpeta, estructura útil, IDs y criterios; estas guías no autorizan regenerarlos ni reducir su detalle. Aplicar [traspaso-presupuestos.md](traspaso-presupuestos.md).
+
 ## `FUNCIONALIDADES.md`
 
 Estructura sugerida:
@@ -45,6 +47,10 @@ Estructura sugerida:
 
 ## Modo de estimacion
 
+## Version del alcance y fuentes seleccionadas
+
+## Naturaleza y granularidad de las horas
+
 ## Criterio de estimacion
 
 ## Supuestos de productividad con IA
@@ -62,6 +68,8 @@ Dentro de `Desglose por rol`, listar cada rol con:
 - tareas principales
 - horas estimadas
 - comentarios o supuestos
+
+Vincular IDs de tareas cuando exista desglose numérico a ese nivel. Si la fuente contiene solo áreas, conservarlas sin inventar asignaciones por funcionalidad. Mostrar agrupadores sin horas sumables y trabajos compartidos una sola vez. Distinguir pendientes/subtotales conocidos de un total cerrado.
 
 Cuando se use `Presupuestador base`, agregar tambien:
 
@@ -81,7 +89,7 @@ Cuando se use `Presupuestador base`, agregar tambien:
 Para cada tarea estimada, registrar el ejemplo de `Presupuestador base` utilizado como referencia, sus horas base y cualquier ajuste aplicado.
 ```
 
-En el modo `Usar planilla proporcionada`, reemplazar las referencias de `Presupuestador base` por la fuente real utilizada. En el modo `Omitir horas`, indicar que la estimacion fue omitida a pedido del usuario y listar los datos pendientes.
+En el modo `Usar horas proporcionadas`, reemplazar las referencias de `Presupuestador base` por la fuente real utilizada. En el modo `Omitir horas`, indicar que la estimacion fue omitida a pedido del usuario y listar los datos pendientes.
 
 ## `PRESUPUESTO.md`
 
