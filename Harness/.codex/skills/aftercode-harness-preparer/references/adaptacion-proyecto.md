@@ -17,16 +17,16 @@ El scaffold observado al redactar esta guía elige un perfil `frontend` **o** `b
 
 En todos los casos, trabajar en una rama de preparación cuando el repositorio destino sea Git y la tarea autorice cambios. Conservar archivos y modificaciones ajenas. Registrar versión o commit central, perfil aplicado, fecha y adaptaciones del proyecto; no mantener una rama permanente por proyecto en el repositorio central.
 
-### Documentos comunes obligatorios del backend
+### Documentos comunes obligatorios
 
-Al preparar cada repositorio backend, copiar explícitamente desde la versión seleccionada de `harness-base` los cuatro documentos comunes de `docs/` hacia el mismo directorio del repositorio destino, antes de completarlos con información específica del proyecto:
+Al preparar los repositorios backend y frontend, copiar explícitamente desde la versión seleccionada de `harness-base` los cuatro documentos comunes de `docs/` a cada repositorio, antes de completarlos con información específica del proyecto:
 
-- `harness-base/docs/architecture.md` → `<backend>/docs/architecture.md`
-- `harness-base/docs/conventions.md` → `<backend>/docs/conventions.md`
-- `harness-base/docs/specs.md` → `<backend>/docs/specs.md`
-- `harness-base/docs/verification.md` → `<backend>/docs/verification.md`
+- `harness-base/docs/architecture.md` → `<backend>/docs/architecture.md` y `<frontend>/docs/architecture.md`
+- `harness-base/docs/conventions.md` → `<backend>/docs/conventions.md` y `<frontend>/docs/conventions.md`
+- `harness-base/docs/specs.md` → `<backend>/docs/specs.md` y `<frontend>/docs/specs.md`
+- `harness-base/docs/verification.md` → `<backend>/docs/verification.md` y `<frontend>/docs/verification.md`
 
-Estos archivos son parte obligatoria del perfil backend SDD/Nest.js y deben quedar incluidos en todos los proyectos backend, tanto si el repositorio destino es nuevo como si ya existe. En un repositorio existente, conservar cambios compatibles del proyecto y adaptar el contenido después de copiarlo; no omitirlos por considerar que son documentos comunes. Si la versión real de `harness-base` usa otra ubicación o nombre, registrar la discrepancia y confirmar la ruta equivalente antes de continuar.
+Estos archivos son obligatorios en ambos repositorios, tanto si son nuevos como si ya existen. Adaptar cada copia al stack, arquitectura, convenciones, specs y comandos de verificación reales de ese repositorio. En un repositorio existente, conservar cambios compatibles del proyecto y adaptar el contenido después de copiarlo; no omitirlos por considerar que son documentos comunes. Si la versión real de `harness-base` usa otra ubicación o nombre, registrar la discrepancia y confirmar la ruta equivalente antes de continuar.
 
 ## Archivos a completar
 
