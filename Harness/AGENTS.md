@@ -6,4 +6,6 @@ La skill se llama `aftercode-harness-preparer`. `skills/aftercode-harness-prepar
 
 Este directorio contiene instrucciones, no un proceso que contacte automáticamente a Relevamiento o a los roles de `harness-base`. El traspaso requiere rutas de documentos o contexto explícito. Antes de instalar, el usuario debe indicar las rutas locales de los repositorios destino: normalmente uno de backend y otro de frontend, o aclarar que un perfil no aplica.
 
+Al preparar un frontend, preguntar por un repositorio de referencia técnica/documental y por la fuente visual (UI existente, diseños o guía de marca). Comparar la instalación con el perfil completo de `harness-base`, incluidos `.agents/`, skills y Markdown estáticos; no declarar completo un frontend con archivos faltantes o decisiones visuales sin fuente.
+
 Los entregables de cada proyecto viven en su repositorio, nunca dentro de esta skill. Al editar este agente, tratar sus archivos como objeto de trabajo y no iniciar un proyecto por el solo hecho de estar aquí.
