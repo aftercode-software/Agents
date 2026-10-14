@@ -68,7 +68,7 @@ La copia y la escritura son una mutación externa. Antes de ejecutarlas, mostrar
 10. Verificar mediante una lectura posterior las celdas escritas, las fórmulas y los totales. El total de la hoja debe coincidir con `HORAS_HOMBRE.md`.
 11. Revisar la hoja renderizada o sus metadatos visuales para detectar celdas cortadas, columnas ilegibles, fórmulas dañadas o cambios fuera del rango solicitado.
 
-Seguir el skill `google-drive:google-sheets` para la búsqueda, copia, lectura de rangos, escritura y verificación. Usar lecturas acotadas y nombres exactos de pestañas; no hacer búsquedas sobre toda la grilla sin necesidad.
+Usar las capacidades de Google Sheets del agente en uso (en Codex, el skill `google-drive:google-sheets`) para la búsqueda, copia, lectura de rangos, escritura y verificación. Usar lecturas acotadas y nombres exactos de pestañas; no hacer búsquedas sobre toda la grilla sin necesidad.
 
 ## Registro local
 

@@ -1,5 +1,19 @@
 # Formatos de post
 
+## Patron editorial prioritario
+
+Tomar como referencia de voz el post de Legali aportado por Matias. Su fuerza no esta en copiar una formula exacta, sino en esta progresion:
+
+1. Abrir con una observacion simple y reconocible.
+2. Mostrar un contraste concreto.
+3. Contar la conversacion, problema o escena que origino la idea.
+4. Presentar lo que hizo Aftercode sin tono promocional.
+5. Dar uno o dos resultados verificables.
+6. Traducir el resultado a un beneficio humano, como recuperar tiempo o poder enfocarse mejor.
+7. Cerrar con una reflexion breve y, si resulta natural, una pregunta facil de responder.
+
+Variar esta progresion entre opciones. No convertirla en una plantilla rigida ni forzar todos los pasos cuando el tema no los necesita.
+
 ## Formato A: Situacion - aprendizaje - reflexion
 
 Usar para experiencias reales.
@@ -64,9 +78,13 @@ Estructura:
 
 ## Estilo de redaccion
 
-- Hook corto y concreto.
-- Parrafos breves.
+- Hook corto, concreto y curioso, sin clickbait.
+- Parrafos breves, habitualmente de una o dos oraciones.
 - Una idea por post.
-- No mas de 3 hashtags salvo que el usuario pida otra cosa.
+- Como referencia, entre 110 y 180 palabras; extender solo si la historia lo justifica.
+- No usar titulos, subtitulos ni etiquetas dentro del texto publicable.
+- No usar hashtags salvo que el usuario los pida o exista una razon concreta.
 - Evitar emojis salvo que encajen naturalmente.
 - Preferir cierres con pregunta humana antes que CTA de venta.
+- No repetir siempre la misma estructura o tipo de cierre.
+- Evitar muletillas asociadas a textos generados por IA, como "en un mundo cada vez mas", "no se trata de", "la verdadera transformacion" o conclusiones demasiado solemnes.

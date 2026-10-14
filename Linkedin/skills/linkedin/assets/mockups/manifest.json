@@ -1,0 +1,39 @@
+{
+  "canvas": { "width": 1080, "height": 1350 },
+  "templates": [
+    { "id": "monitor-029-rosa-neutro", "file": "029.png", "category": "monitor", "label": "Monitor centrado, rosa y gris", "tone": ["claro", "rosa", "sobrio"], "quad": [[136,341],[944,341],[944,794],[136,794]] },
+    { "id": "monitor-116-izquierda-rosa", "file": "116.png", "category": "monitor", "label": "Monitor recortado a la izquierda, rosa y gris", "tone": ["claro", "rosa", "editorial"], "quad": [[-11,340],[797,340],[797,931],[-11,931]] },
+    { "id": "monitor-280-espacio-rosa", "file": "280.png", "category": "monitor", "label": "Monitor centrado, espacio oscuro y rosa", "tone": ["oscuro", "rosa", "tecnologia"], "quad": [[136,341],[944,341],[944,794],[136,794]] },
+    { "id": "monitor-542-izquierda-espacio", "file": "542.png", "category": "monitor", "label": "Monitor recortado a la izquierda, espacio oscuro", "tone": ["oscuro", "rosa", "editorial"], "quad": [[-11,340],[797,340],[797,931],[-11,931]] },
+    { "id": "monitor-760-naranja", "file": "760.png", "category": "monitor", "label": "Monitor centrado, fondo naranja", "tone": ["naranja", "energetico", "tecnologia"], "quad": [[136,341],[944,341],[944,794],[136,794]] },
+    { "id": "monitor-811-derecha-rosa", "file": "811.png", "category": "monitor", "label": "Monitor recortado a la derecha, rosa y gris", "tone": ["claro", "rosa", "editorial"], "quad": [[283,340],[1091,340],[1091,931],[283,931]] },
+    { "id": "monitor-831-derecha-naranja", "file": "831.png", "category": "monitor", "label": "Monitor recortado a la derecha, fondo naranja", "tone": ["naranja", "energetico", "editorial"], "quad": [[283,340],[1091,340],[1091,931],[283,931]] },
+    { "id": "monitor-887-derecha-naranja", "file": "887.png", "category": "monitor", "label": "Monitor recortado a la derecha, naranja alternativo", "tone": ["naranja", "energetico", "editorial"], "quad": [[283,340],[1091,340],[1091,931],[283,931]] },
+    { "id": "monitor-929-derecha-espacio", "file": "929.png", "category": "monitor", "label": "Monitor recortado a la derecha, espacio oscuro", "tone": ["oscuro", "rosa", "tecnologia"], "quad": [[283,340],[1091,340],[1091,931],[283,931]] },
+
+    { "id": "notebook-111-violeta", "file": "111.png", "category": "notebook", "label": "Notebook centrada, negro y violeta", "tone": ["oscuro", "violeta", "premium"], "quad": [[128,415],[951,415],[951,941],[128,941]], "exclusions": [[[498,415],[582,415],[582,433],[498,433]]] },
+    { "id": "notebook-207-claro-violeta", "file": "207.png", "category": "notebook", "label": "Notebook centrada, blanco y violeta", "tone": ["claro", "violeta", "limpio"], "quad": [[128,415],[951,415],[951,941],[128,941]], "exclusions": [[[498,415],[582,415],[582,433],[498,433]]] },
+    { "id": "notebook-225-azul-naranja", "file": "225.png", "category": "notebook", "label": "Notebook centrada, azul y naranja", "tone": ["azul", "naranja", "creativo"], "quad": [[128,415],[951,415],[951,941],[128,941]], "exclusions": [[[498,415],[582,415],[582,433],[498,433]]] },
+    { "id": "notebook-513-izquierda-concreto", "file": "513.png", "category": "notebook", "label": "Notebook recortada a la izquierda, concreto", "tone": ["claro", "neutro", "minimalista"], "quad": [[-7,340],[817,340],[817,970],[-7,970]] },
+    { "id": "notebook-518-concreto", "file": "518.png", "category": "notebook", "label": "Notebook centrada, concreto", "tone": ["claro", "neutro", "minimalista"], "quad": [[128,415],[951,415],[951,941],[128,941]], "exclusions": [[[498,415],[582,415],[582,433],[498,433]]] },
+    { "id": "notebook-675-naranja", "file": "675.png", "category": "notebook", "label": "Notebook centrada, fondo naranja", "tone": ["naranja", "energetico", "tecnologia"], "quad": [[128,415],[951,415],[951,941],[128,941]], "exclusions": [[[498,415],[582,415],[582,433],[498,433]]] },
+    { "id": "notebook-686-derecha-concreto", "file": "686.png", "category": "notebook", "label": "Notebook recortada a la derecha, concreto", "tone": ["claro", "neutro", "editorial"], "quad": [[273,340],[1097,340],[1097,970],[273,970]] },
+    { "id": "notebook-696-izquierda-violeta", "file": "696.png", "category": "notebook", "label": "Notebook recortada a la izquierda, negro y violeta", "tone": ["oscuro", "violeta", "editorial"], "quad": [[-7,340],[817,340],[817,970],[-7,970]] },
+    { "id": "notebook-852-derecha-naranja", "file": "852.png", "category": "notebook", "label": "Notebook recortada a la derecha, naranja", "tone": ["naranja", "energetico", "editorial"], "quad": [[273,340],[1097,340],[1097,970],[273,970]] },
+    { "id": "notebook-942-izquierda-naranja", "file": "942.png", "category": "notebook", "label": "Notebook recortada a la izquierda, naranja", "tone": ["naranja", "energetico", "editorial"], "quad": [[-7,340],[817,340],[817,970],[-7,970]] },
+
+    { "id": "telefono-088-inclinado-concreto", "file": "088.png", "category": "telefono", "label": "Teléfono inclinado, concreto", "tone": ["claro", "neutro", "realista"], "quad": [[294,205],[642,185],[783,1127],[402,1150]], "exclusions": [[[444,185],[576,178],[582,224],[451,231]]] },
+    { "id": "telefono-213-inclinado-rojo", "file": "213.png", "category": "telefono", "label": "Teléfono inclinado, fondo rojo", "tone": ["rojo", "naranja", "intenso"], "quad": [[294,205],[642,185],[783,1127],[402,1150]], "exclusions": [[[444,185],[576,178],[582,224],[451,231]]] },
+    { "id": "telefono-221-espacio-rosa", "file": "221.png", "category": "telefono", "label": "Teléfono vertical, espacio y rosa", "tone": ["oscuro", "rosa", "tecnologia"], "quad": [[306,186],[777,186],[777,1170],[306,1170]], "exclusions": [[[468,186],[612,186],[612,236],[468,236]]] },
+    { "id": "telefono-585-rosa-claro", "file": "585.png", "category": "telefono", "label": "Teléfono vertical, rosa claro", "tone": ["claro", "rosa", "limpio"], "quad": [[306,186],[777,186],[777,1170],[306,1170]], "exclusions": [[[468,186],[612,186],[612,236],[468,236]]] },
+    { "id": "telefono-607-inclinado-azul", "file": "607.png", "category": "telefono", "label": "Teléfono inclinado, ondas azules", "tone": ["azul", "violeta", "dinamico"], "quad": [[294,205],[642,185],[783,1127],[402,1150]], "exclusions": [[[444,185],[576,178],[582,224],[451,231]]] },
+    { "id": "telefono-609-rojo", "file": "609.png", "category": "telefono", "label": "Teléfono vertical, fondo rojo", "tone": ["rojo", "naranja", "intenso"], "quad": [[306,186],[777,186],[777,1170],[306,1170]], "exclusions": [[[468,186],[612,186],[612,236],[468,236]]] },
+    { "id": "telefono-745-inclinado-violeta", "file": "745.png", "category": "telefono", "label": "Teléfono inclinado, violeta", "tone": ["violeta", "rosa", "moderno"], "quad": [[294,205],[642,185],[783,1127],[402,1150]], "exclusions": [[[444,185],[576,178],[582,224],[451,231]]] },
+
+    { "id": "navegador-082-naranja", "file": "082.png", "category": "navegador", "label": "Navegador grande recortado, fondo naranja", "tone": ["naranja", "energetico", "web"], "quad": [[152,449],[1095,449],[1095,1360],[152,1360]] },
+    { "id": "navegador-224-violeta", "file": "224.png", "category": "navegador", "label": "Navegador centrado, fondo violeta", "tone": ["violeta", "moderno", "web"], "quad": [[136,402],[944,402],[944,1006],[136,1006]] },
+    { "id": "navegador-573-oscuro", "file": "573.png", "category": "navegador", "label": "Navegador grande recortado, fondo oscuro", "tone": ["oscuro", "premium", "web"], "quad": [[152,449],[1095,449],[1095,1360],[152,1360]] },
+    { "id": "navegador-726-violeta-claro", "file": "726.png", "category": "navegador", "label": "Navegador grande recortado, violeta claro", "tone": ["claro", "violeta", "web"], "quad": [[152,449],[1095,449],[1095,1360],[152,1360]] },
+    { "id": "navegador-963-oscuro-centrado", "file": "963.png", "category": "navegador", "label": "Navegador centrado, ondas oscuras", "tone": ["oscuro", "premium", "web"], "quad": [[136,402],[944,402],[944,1006],[136,1006]] }
+  ]
+}

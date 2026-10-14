@@ -19,7 +19,7 @@ El contenido debe sonar como Aftercode: claro, moderno, directo, tecnico cuando 
 - Leer `references/archivos-salida.md` antes de crear archivos locales.
 - Leer `references/drive.md` antes de preparar o subir contenido a Google Drive.
 - Para novedades actuales o tendencias, investigar informacion vigente antes de proponer temas y guardar fuentes en `FUENTES.md`.
-- Para Google Drive, usar el plugin o conector `Google Drive` cuando este disponible.
+- Para Google Drive, usar el conector de Google Drive del agente en uso (Codex: plugin `Google Drive` y skills `google-drive:*`; Claude: conectores Google Drive, Docs y Sheets de claude.ai y la skill `google-workspace` si está disponible), cuando este disponible.
 
 ## Entrega semanal obligatoria
 

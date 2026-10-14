@@ -13,9 +13,10 @@ Guiar el proceso en cuatro etapas con compuertas claras de confirmacion. Avanzar
 - Leer `references/horas-presupuestador.md` durante la etapa 2 cuando se deba calcular horas desde requisitos o usar una planilla proporcionada.
 - Leer `references/traspaso-presupuestos.md` al recibir un relevamiento o preparar/actualizar su estimacion. Es el contrato compartido con `relevamiento`: fuentes por dimension, IDs, cobertura, modo de horas y retorno de pendientes.
 - Si el usuario aporta archivos, notas, propuestas previas o documentacion, analizarlos antes de formular preguntas nuevas.
-- Para la etapa de Google Drive, usar las capacidades del plugin `Google Drive`.
-- Para copiar y completar `Presupuestador base`, seguir tambien el skill `google-drive:google-sheets`.
-- Para editar el Google Doc final, seguir tambien el skill `google-drive:google-docs`.
+- Para la etapa de Google Drive, usar las capacidades de Google Drive del agente en uso (Codex: plugin `Google Drive` y skills `google-drive:*`; Claude: conectores Google Drive, Docs y Sheets de claude.ai y la skill `google-workspace` si está disponible).
+- Para copiar y completar `Presupuestador base`, usar las capacidades de Google Sheets (en Codex, el skill `google-drive:google-sheets`).
+- Para editar el Google Doc final, usar las capacidades de Google Docs (en Codex, el skill `google-drive:google-docs`).
+- Si una capacidad requerida (copiar nativo, aplicar estilos, escribir rangos) no esta disponible en el agente en uso, informarlo antes de empezar y no reemplazarla por un archivo local o un documento reconstruido.
 
 ## Flujo obligatorio
 
@@ -251,8 +252,8 @@ Solo ejecutar esta etapa con confirmacion explicita del usuario.
 
 - Llevar el contenido de `PRESUPUESTO.md` al Google Doc copiado.
 - Respetar todos los títulos y subtítulos del markdown.
-- Aplicar estilos de encabezado reales en Google Docs para todos los títulos y subtítulos, usando la herramienta de Google Drive.
-- Aplicar formato de lista real en todas las listas, usando la herramienta de Google Drive.
+- Aplicar estilos de encabezado reales en Google Docs para todos los títulos y subtítulos, usando la herramienta de Google Docs disponible.
+- Aplicar formato de lista real en todas las listas, usando la herramienta de Google Docs disponible.
 - Si al copiar contenido quedan guiones sueltos simulando listas, eliminarlos y reconstruir la lista con formato de lista nativo.
 - Eliminar los espacios en blanco sobrantes entre párrafos para que el documento quede compacto y consistente.
 - Conservar los estilos existentes de `Presupuesto base`.
