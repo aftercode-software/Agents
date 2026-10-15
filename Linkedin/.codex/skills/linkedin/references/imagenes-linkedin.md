@@ -9,7 +9,7 @@ Resolver la imagen solo despues de que el texto este aprobado.
 ## Flujo de seleccion
 
 - Si el usuario aporta imagenes, conservar los originales tal cual: no editar, recortar, comprimir, renombrar ni alterar metadatos. Crear los mockups como archivos derivados separados.
-- Si el usuario no tiene imagenes, generar tres imagenes reales y visualmente distintas. No limitarse a describir conceptos o prompts.
+- Si el usuario no tiene imagenes, generar tres imagenes reales y visualmente distintas. No limitarse a describir conceptos o prompts, salvo que el agente en uso no tenga herramienta de generacion de imagenes: entonces avisarlo y entregar tres prompts listos.
 - Mostrar las tres imagenes en la conversacion y esperar una eleccion o pedido de cambios.
 - No subir ninguna imagen a Drive hasta que el usuario haya aprobado la seleccion y confirmado la subida del paquete final.
 - Si el usuario descarta las tres, permitir nuevas propuestas o publicar solo texto.
