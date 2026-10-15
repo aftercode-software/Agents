@@ -1,0 +1,4 @@
+interface:
+  display_name: "Informes Mantenimiento"
+  short_description: "Crea informes mensuales de mantenimiento en Drive."
+  default_prompt: "Usa $informes-mantenimiento para preparar el informe mensual de un cliente, comparar los arreglos y métricas con el mes anterior y guardarlo en Cuentas con el formato del ejemplo."

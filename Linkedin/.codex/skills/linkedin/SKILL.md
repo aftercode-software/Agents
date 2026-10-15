@@ -66,7 +66,7 @@ Solo despues de aprobar el post, preguntar:
 - Si tiene imagenes, pedir que las adjunte. Conservar los archivos originales exactamente como fueron entregados: no editar, recortar, comprimir, renombrar ni regenerar. Mostrar o enumerar lo recibido para confirmar el conjunto.
 - Si no tiene imagenes, crear tres propuestas visuales diferentes siguiendo `references/imagenes-linkedin.md`. Generar las tres imagenes reales y mostrarlas en la conversacion antes de preparar cualquier subida a Drive. Permitir que elija una, pida cambios, combine enfoques o descarte todas.
 
-No sustituir las tres imagenes por descripciones o prompts, salvo que el usuario pida solo conceptos.
+No sustituir las tres imagenes por descripciones o prompts, salvo que el usuario pida solo conceptos o que el agente en uso no tenga una herramienta de generacion de imagenes. En ese caso, decirlo explicitamente y entregar tres prompts listos para generar.
 
 Despues de aprobar una imagen principal, aplicar `references/galeria-mockups.md`:
 

@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 Relevamiento/evaluaciones/*)",
+      "Bash(python3 Harness/evaluaciones/*)",
+      "Bash(python3 Informes-Mantenimiento/evaluaciones/*)",
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git show *)"
+    ]
+  }
+}

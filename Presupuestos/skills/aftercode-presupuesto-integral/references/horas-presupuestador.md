@@ -43,10 +43,10 @@ Si la planilla no respalda algún dato necesario para el presupuesto, pedir sola
 
 ## Plantilla de Google Sheets
 
-La plantilla de horas es un archivo nativo de Google Sheets titulado `Presupuestador base`, ubicado en la raíz de My Drive. No confundirlo con el Google Doc `Presupuesto base`, que se usa en la etapa 4.
+La plantilla de horas es el Google Sheets `Presupuestador base`, identificado por su ID en `plantillas-drive.md`. Es de uso interno y no se envía al cliente. No confundirlo con el Google Doc `Presupuesto Base Texto`, que se usa en la etapa 4.
 
-1. Buscar el archivo por título y verificar que esté en la raíz de My Drive.
-2. Si no existe, hay varias coincidencias o la ubicación no es clara, detenerse y pedir confirmación.
+1. Abrir el archivo por su ID (`plantillas-drive.md`) y verificar que sea un Google Sheets.
+2. Si el ID no responde o el archivo no es el esperado, detenerse y pedir el enlace vigente.
 3. Leer primero los metadatos del spreadsheet y los nombres exactos de sus pestañas.
 4. Copiar el spreadsheet completo a un archivo nuevo; no editar el original ni reconstruir la plantilla desde cero.
 5. Crear la copia en la raíz de My Drive con el nombre `Presupuestador <Nombre del cliente>`, salvo que el usuario indique otro nombre. Si ya existe un archivo con ese nombre, pedir confirmación antes de sobrescribir o crear una variante.
@@ -68,7 +68,7 @@ La copia y la escritura son una mutación externa. Antes de ejecutarlas, mostrar
 10. Verificar mediante una lectura posterior las celdas escritas, las fórmulas y los totales. El total de la hoja debe coincidir con `HORAS_HOMBRE.md`.
 11. Revisar la hoja renderizada o sus metadatos visuales para detectar celdas cortadas, columnas ilegibles, fórmulas dañadas o cambios fuera del rango solicitado.
 
-Seguir el skill `google-drive:google-sheets` para la búsqueda, copia, lectura de rangos, escritura y verificación. Usar lecturas acotadas y nombres exactos de pestañas; no hacer búsquedas sobre toda la grilla sin necesidad.
+Usar las capacidades de Google Sheets del agente en uso (en Codex, el skill `google-drive:google-sheets`) para la búsqueda, copia, lectura de rangos, escritura y verificación. Usar lecturas acotadas y nombres exactos de pestañas; no hacer búsquedas sobre toda la grilla sin necesidad.
 
 ## Registro local
 

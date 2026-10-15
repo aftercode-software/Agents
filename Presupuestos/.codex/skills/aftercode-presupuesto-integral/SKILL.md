@@ -1,6 +1,6 @@
 ---
 name: aftercode-presupuesto-integral
-description: Crear y gestionar presupuestos comerciales de Aftercode de punta a punta. Usar cuando el usuario quiera relevar un proyecto desde documentacion o un `.docx`, definir alcance y exclusiones, estimar horas opcionalmente en una copia de `Presupuestador base` de Google Sheets o usar una planilla proporcionada, redactar el presupuesto final y, con confirmacion explicita, subirlo a Google Drive usando la plantilla `Presupuesto base`.
+description: Crear y gestionar presupuestos comerciales de Aftercode de punta a punta. Usar cuando el usuario quiera relevar un proyecto desde documentacion o un `.docx`, definir alcance y exclusiones, estimar horas opcionalmente en una copia de `Presupuestador base` de Google Sheets o usar una planilla proporcionada, redactar el presupuesto final y, con confirmacion explicita, subirlo a Google Drive usando la plantilla `Presupuesto Base Texto`.
 ---
 
 # Aftercode Presupuesto Integral
@@ -11,11 +11,13 @@ Guiar el proceso en cuatro etapas con compuertas claras de confirmacion. Avanzar
 
 - Leer `references/plantillas-presupuestos.md` para respetar la estructura de `Pagina web basica` o `Sistema complejo`.
 - Leer `references/horas-presupuestador.md` durante la etapa 2 cuando se deba calcular horas desde requisitos o usar una planilla proporcionada.
+- Leer `references/plantillas-drive.md` antes de usar cualquier plantilla de Google Drive: define por ID el Sheet interno de horas y el Doc que recibe el cliente.
 - Leer `references/traspaso-presupuestos.md` al recibir un relevamiento o preparar/actualizar su estimacion. Es el contrato compartido con `relevamiento`: fuentes por dimension, IDs, cobertura, modo de horas y retorno de pendientes.
 - Si el usuario aporta archivos, notas, propuestas previas o documentacion, analizarlos antes de formular preguntas nuevas.
-- Para la etapa de Google Drive, usar las capacidades del plugin `Google Drive`.
-- Para copiar y completar `Presupuestador base`, seguir tambien el skill `google-drive:google-sheets`.
-- Para editar el Google Doc final, seguir tambien el skill `google-drive:google-docs`.
+- Para la etapa de Google Drive, usar las capacidades de Google Drive del agente en uso (Codex: plugin `Google Drive` y skills `google-drive:*`; Claude: conectores Google Drive, Docs y Sheets de claude.ai y la skill `google-workspace` si está disponible).
+- Para copiar y completar `Presupuestador base`, usar las capacidades de Google Sheets (en Codex, el skill `google-drive:google-sheets`).
+- Para editar el Google Doc final, usar las capacidades de Google Docs (en Codex, el skill `google-drive:google-docs`).
+- Si una capacidad requerida (copiar nativo, aplicar estilos, escribir rangos) no esta disponible en el agente en uso, informarlo antes de empezar y no reemplazarla por un archivo local o un documento reconstruido.
 
 ## Flujo obligatorio
 
@@ -96,8 +98,8 @@ Si el usuario pide directamente "presupuesto + horas", ejecutar la estimacion y 
 - Si el usuario aporta un documento `.docx` con los requisitos, leerlo completo antes de formular preguntas nuevas. Revisar tambien sus tablas, listas y encabezados.
 - Extraer del documento el objetivo, funcionalidades, modulos, usuarios, roles, integraciones, restricciones, exclusiones y pendientes.
 - Dar prioridad a las instrucciones explicitas del usuario si contradicen el documento y registrar la contradiccion cuando afecte la estimacion.
-- Seguir `references/horas-presupuestador.md` para localizar el archivo nativo de Google Sheets `Presupuestador base` en la raiz de My Drive, copiarlo y completar su tabla de horas.
-- La copia de `Presupuestador base` es el lugar de trabajo para la estimacion numerica. No editar la plantilla original, no reconstruirla desde cero y no confundirla con el Google Doc `Presupuesto base` de la etapa 4.
+- Seguir `references/horas-presupuestador.md` para copiar el Google Sheets `Presupuestador base` (ID en `references/plantillas-drive.md`) y completar su tabla de horas.
+- La copia de `Presupuestador base` es el lugar de trabajo para la estimacion numerica. No editar la plantilla original, no reconstruirla desde cero y no confundirla con el Google Doc `Presupuesto Base Texto` de la etapa 4.
 - Identificar mediante lectura de metadatos la pestana y el rango reales de la tabla de horas. No asumir nombres de pestana, rangos, columnas ni formulas.
 - Para cada tarea, usar como referencia el ejemplo existente mas parecido en `Presupuestador base`. Partir de sus horas y mantenerlas si el alcance es equivalente; ajustar solo por diferencias concretas de alcance o complejidad y documentar el motivo.
 - Comprobar equivalencia de alcance, reutilizacion, equipo y cobertura de pruebas/revision antes de usar una referencia. Un ejemplo presupuestado no es productividad medida; no forzar su escala cuando no sea comparable ni convertir complejidad en horas automaticamente.
@@ -243,19 +245,20 @@ Solo ejecutar esta etapa con confirmacion explicita del usuario.
 2. Dentro de `Cuentas`, buscar una carpeta con el nombre del cliente.
 3. Si existe mas de una candidata o el nombre no coincide claramente, preguntar al usuario cual corresponde.
 4. Si no existe, proponer crearla y confirmar con el usuario antes de hacerlo.
-5. Buscar el Google Doc `Presupuesto base` dentro de `Cuentas/Presupuestos generales`.
+5. Usar el Google Doc `Presupuesto Base Texto` por su ID (ver `references/plantillas-drive.md`); no buscarlo por nombre.
 6. Copiar ese documento dentro de la carpeta del cliente.
 7. Nombrar la copia `Presupuesto <Nombre del cliente>`.
+8. Seguir `references/plantillas-drive.md`: reemplazar todo el cuerpo con `PRESUPUESTO.md` y conservar el bloque `Referencias de nuestros trabajos.`
 
 #### Edicion del documento
 
 - Llevar el contenido de `PRESUPUESTO.md` al Google Doc copiado.
 - Respetar todos los títulos y subtítulos del markdown.
-- Aplicar estilos de encabezado reales en Google Docs para todos los títulos y subtítulos, usando la herramienta de Google Drive.
-- Aplicar formato de lista real en todas las listas, usando la herramienta de Google Drive.
+- Aplicar estilos de encabezado reales en Google Docs para todos los títulos y subtítulos, usando la herramienta de Google Docs disponible.
+- Aplicar formato de lista real en todas las listas, usando la herramienta de Google Docs disponible.
 - Si al copiar contenido quedan guiones sueltos simulando listas, eliminarlos y reconstruir la lista con formato de lista nativo.
 - Eliminar los espacios en blanco sobrantes entre párrafos para que el documento quede compacto y consistente.
-- Conservar los estilos existentes de `Presupuesto base`.
+- Conservar los estilos existentes de `Presupuesto Base Texto`.
 - No remaquetar el documento manualmente si eso rompe los estilos originales.
 - Mantener intacto cualquier bloque de referencias o cierre que deba preservarse según la plantilla base existente en Drive.
 - Revisar cuidadosamente ortografía, acentuación y tildes antes de dar el documento por finalizado.
@@ -263,6 +266,7 @@ Solo ejecutar esta etapa con confirmacion explicita del usuario.
 #### Verificaciones finales
 
 - Confirmar que el documento quedó en la carpeta correcta.
+- Confirmar que no quedan restos del cliente de la plantilla (ver la lista de control en `references/plantillas-drive.md`) y que el bloque de referencias sigue intacto.
 - Verificar que no queden placeholders ni texto genéricamente redactado.
 - Verificar que todos los encabezados sean consistentes con `PRESUPUESTO.md` y tengan estilo de encabezado aplicado.
 - Verificar que todas las listas tengan formato de lista aplicado y que no queden guiones sueltos donde debería haber viñetas o numeración real.
